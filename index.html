@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7a8d160efc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- navbar and imgs here -->
+    <div class="navimg">
+        <header class="section-header">
+            <a href="index.html"><img src="vecter/logo.png" class="logo" alt="" width="100px" height="60px"></a>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="whitepaper.html">WhitePaper</a></li>
+                <li><a href="#featuresid">Features</a></li>
+                <li><a href="#screenid">Download</a></li>
+                <li><a href="#contactid">ContactUs</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </header>
+
+        <section class="section-img">
+            <img src="vecter/star.png" id="stars">
+            <img src="vecter/comet_front.png" id="comet_front">
+            <h2 id="text">Co-met Network</h2>
+            <img src="vecter/planet9.png" id="planet">
+        </section>
+    </div>
+    <!-- First text start here -->
+    <div class=" first-txt pb-5" id="topheader">
+        <img class="simg" src="vecter/star.png" id="ftext_star">
+        <section class="first-txt-section container">
+            <div class="row" style="padding-top: 180px; margin-bottom: 40px;">
+                <div class="font-weight-bold col-sm-7" style="padding: 20px;">
+                    <h1 class="font-weight-bold">"Co-met Network"</h1>
+                    <p>Setup your account and start miining with a single click. <br>Earn with Co-met Network.</p>
+                    <div class="txt-buttons">
+                        <a href="#"><img src="vecter/playstore.png" alt="" height="48px" width="150px"
+                                style="margin-right:-15px ;"></a>
+                        <a href="#"><img src="vecter/appstore.png" alt="" height="48px" width="150px"
+                                style="margin-left:-15px ;"></a>
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <img src="vecter/comet_logo_2.jpg" alt="Co-met Network" height="220px" width="320px" >
+                </div>
+            </div>
+            <h2 id="featuresid" style="color:#fdfdfd00;">featureid</h2>
+        </section>
+    </div>
+    <!-- Features starts here -->
+    <h1 class="text-center" id="" style="margin-top: -50px;color: white;">Features</h1>
+        <div class=" fea-main-container">
+            <!-- <img class="fimg" src="vecter/star.png" id="fea_star"> -->
+            <div class="fea-outcontainer container">
+                <button class="scroll-button" id="button-scroll-left" onclick="scrollHorizontally(1)"><i
+                        class="fa-solid fa-angle-left"></i></button>
+                <div class="horizontal-scroll">
+                    <div class=" fea-container">
+                        <div class="fea-box">
+                            <div class="card text-center py-3">
+                                <div class="card-body">
+                                    <h4 class="font-weight-bold pb-2">Decentralized</h4>
+                                    <p>Non-counterfeitable and interoperable digital currency</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fea-box">
+                            <div class="card text-center py-3">
+                                <div class="card-body">
+                                    <h4 class="font-weight-bold pb-2">User friendly</h4>
+                                    <p>Easy to use, Mine at single click <br> of button</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fea-box">
+                            <div class="card text-center py-3">
+                                <div class="card-body">
+                                    <h4 class="font-weight-bold pb-2">News</h4>
+                                    <p>Latest news about Co-met platform, also accessiable in app.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fea-box">
+                            <div class="card text-center py-3">
+                                <div class="card-body">
+                                    <h4 class="font-weight-bold pb-2">Earning</h4>
+                                    <p>Invite your friends and increase <br> mining rate.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fea-box">
+                            <div class="card text-center py-3">
+                                <div class="card-body">
+                                    <h4 class="font-weight-bold pb-2">Accessiable by Everyone</h4>
+                                    <p>Anyone with a mobile phone and internet access can join Co-met Network.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="scroll-button" id="button-scroll-right" onclick="scrollHorizontally(-1)"><i
+                        class="fa-solid fa-angle-right"></i></button>
+            </div>
+            <h2 id="screenid" style="color:#fdfdfd00;">featureid</h2>
+        </div>
+        <!-- Download screen starts here -->
+        <section class="screen-section ">
+            <img class="dimg" src="vecter/star.png" id="d_star">
+            <div class="container">
+                <div class="row screen-row" style="text-align: center;">
+                    <div class="col-sm-5 screen-col" style="padding-left: 50px;">
+                        <img src="vecter/screen_img.png" alt="Co-met Network" height="400px" width="280px">
+                    </div>
+                    <div class="font-weight-bold col-sm-7 screen-col" style="float: right;">
+                        <h1 class="font-weight-bold" style="color: white;">Download now and start earning</h1>
+                        <P class="screen-p">Download the Co-met Network app and start your <br> crypto journy.</P>
+                        <div class="header-buttons" style="margin-left:0px;">
+                            <a href="#"><img src="vecter/playstore.png" alt="" height="48px" width="150px"
+                                    style="margin-right:-15px ;"></a>
+                            <a href="#"><img src="vecter/appstore.png" alt="" height="48px" width="150px"
+                                    style="margin-left:-15px ;"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2 id="contactid" style="color:#fdfdfd00;">featureid</h2>
+        </section>
+        <!-- contact section starts here -->
+        <div class="about-section container">
+            <div class="inner-container">
+                <div class="contact-section">
+                    <h1 id="" class="geth1">Get In Touch with Us</h1>
+                    <div class="in-text">
+                        <input type="text" class="name" placeholder="Your Name">
+                        <input type="text" class="email" placeholder="Your Phone / Email">
+                    </div>
+                    <textarea rows="1" placeholder="Message" class="message"></textarea><br>
+                    <button class="touchbtn">Get in touch</button>
+                </div>
+            </div>
+        </div>
+        <!-- footer here -->
+        <footer id="footer" class="footercl">
+            <div class="container footercon">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="social-media justify-content-center">
+                            <li><a target="_blank" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                            <li><a target="_blank" href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+                            <li><a target="_blank" href="https://www.linkedin.com/"><i class="fa fa-telegram"></i></a></li>
+                            <li><a target="_blank" href="https://www.facebook.com/"><i class="fa fa-youtube"></i></a></li>
+                            <li><a target="_blank" href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="copyright1 text-center">
+                            <p style="color:white;font-size: 18px; ">&copy; 2022 Co-met Network. | All rights reserved.</p>
+                        </div>
+                        <div class="links text-center">
+                            <a target="_blank" href="terms.html">Terms of Service</a>
+                            <a target="_blank" href="policy.html">Privacy Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><span><img src="vecter/contact_img.png" alt="" width="70px"
+                height="65px"></span></button>
+    <script>
+        let stars = document.getElementById('stars');
+        let comet_front = document.getElementById('comet_front');
+        let ftext_star = document.getElementById('ftext_star');
+        let d_star = document.getElementById('d_star');
+        let text = document.getElementById('text');
+        let planet = document.getElementById('planet');
+        let btn = document.getElementById('btn');
+        let header = document.querySelector('header');
+
+        window.addEventListener('scroll', function () {
+            let value = window.scrollY;
+            stars.style.right = value * 0.5 + 'px';
+            stars.style.top = value * 0.5 + 'px';
+
+            ftext_star.style.right = value * 0.5 + 'px';
+            ftext_star.style.top = value * 0.5 + 'px';
+
+            d_star.style.top = value * 0.5 + 'px';
+            d_star.style.right = value * 0.5 + 'px';
+
+            comet_front.style.right = value * 2.5 + 'px';
+            comet_front.style.top = value * -0.4 + 'px';
+            planet.style.top = value * 0.7 + 'px';
+            mountains_front.style.top = value * 0 + 'px';
+            text.style.marginTop = value * 1.5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        })
+    </script>
+
+    <script>
+        mybutton = document.getElementById("myBtn");
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+
+    <script>
+        let currentScrollPosition = 0;
+        let scrollAmount = 320;
+
+        const sCont = document.querySelector(".fea-container");
+        const hscroll = document.querySelector(".horizontal-scroll");
+        const btnScrollLeft = document.querySelector("#button-scroll-left");
+        const btnScrollRight = document.querySelector("#button-scroll-right");
+
+        btnScrollLeft.style.opacity = "1";
+
+        let maxScroll = -sCont.offsetWidth + hscroll.offsetWidth;
+
+        function scrollHorizontally(val) {
+            currentScrollPosition += (val * scrollAmount);
+
+            if (currentScrollPosition >= 0) {
+                currentScrollPosition = 0
+                btnScrollLeft.style.opacity = "1";
+            } else {
+                btnScrollLeft.style.opacity = "1";
+            }
+            if (currentScrollPosition <= maxScroll) {
+                currentScrollPosition = maxScroll;
+                btnScrollRight.style.opacity = "1";
+            } else {
+                btnScrollRight.style.opacity = "1";
+            }
+            sCont.style.left = currentScrollPosition + "px";
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

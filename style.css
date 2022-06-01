@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css?family=poppins:300,400,500,600,700,800,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    scroll-behavior: smooth;
+    font-family: 'Josefin Sans', sans-serif;
+}
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: fit-content;
+    background-color: #0a1225;
+}
+.navimg{
+    background: linear-gradient(#0a1225,#0a1225);
+    margin-bottom: -10px;
+}
+
+/******************************** Navbar code starts here */
+.section-header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10000;
+}
+.section-header .logo{
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 2em;
+    cursor: pointer;
+}
+.section-header ul{
+    display: flex;
+    list-style: none;
+    cursor: pointer;
+    list-style: none;
+    text-decoration: none;
+}
+.section-header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+.section-header ul li a{
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+    padding:6px 15px;
+}
+.section-header ul li a:hover,
+.section-header ul li a.active{
+    background: #fff;
+    color: #2b1055;
+}
+/*********************************** Navbar Ends here */
+/* ********************************* Imags here */
+
+.section-img{
+    position: relative;
+    width: 100%;
+    height:600px;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.section-img::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(to top,#0a1225,transparent);
+    z-index: 1000;
+}
+.section-img img{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    object-fit:cover;
+    pointer-events: none;
+    text-align: center;
+    justify-content: center;
+    
+}
+.section-img img#stars{
+    justify-content: center;
+    mix-blend-mode:color-dodge;
+    height: 80%;
+    margin-top: 50px;
+}
+.section-img img#comet_front{
+    transform:rotate(50deg);
+    -ms-transform:rotate(50deg); /* IE 9 */
+    -webkit-transform:rotate(50deg); /* Safari and Chrome */
+    mix-blend-mode: color-dodge;
+    margin-top: 10px;
+}
+.section-img img#planet{
+    z-index: 10;
+    width: inherit;
+    height: inherit;
+}
+#text{
+    position: absolute;
+    color: #fff;
+    font-size: 7.0vw;
+    white-space:nowrap;
+    z-index: 109;
+}
+
+/* ******************************* first text section start here */
+.first-txt{
+    margin-bottom: 50px;
+    width: 100%;
+    height:600px;
+    background-image:linear-gradient(#0a1225,#0a1225);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    /* clip-path: polygon(100% 0%,100% 74%,0% 100%,0 75%,0 0); */
+    
+}
+.first-txt::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to bottom,#0a1225,transparent);
+    z-index: 1000;
+}
+
+.simg{
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    object-fit:cover;
+    pointer-events: none;
+    margin-right: -250px;
+    margin-top: -250px;
+    mix-blend-mode: color-dodge;
+}
+
+.first-txt-section{
+    width: 100%;
+    height: inherit;
+    color: white;
+    display: inline-flexbox;
+    text-align: center;
+    position: relative;
+}
+.first-txt-section h1{
+    font-size: 50px;
+}
+/* .center-div{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+} */
+.txt-buttons a{
+    margin-top: 20px;
+}
+.txt-buttons a:hover{
+    cursor: pointer;
+}
+/* .center-div p{
+    font-size: 1rem;
+    padding: 10px 0 20px 0;
+    color: #fff;
+} */
+
+/********************************************* feature section */
+.fea-outcontainer{
+    display: flex;
+    padding: 0 35px;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+}
+.horizontal-scroll{
+    width: 140%;
+    height: 200px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.scroll-button{
+    background-color: rgba(255, 255, 255, 0);
+    color: salmon;
+    padding: 20px;
+    font-size: 40px;
+    border: 0;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin: 5px;
+    z-index: 100;
+    cursor: pointer;
+    transition: 1s;
+}
+.fea-container{
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 0px;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    transition: 0.5s all ease-out;
+}
+.fea-box{
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    border: none;
+    margin: 10px;
+    outline: none;
+    background-color: #0a1225;
+    box-shadow: -8px 8px 89px -55px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -38px 38px 8px -85px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -8px 8px 89px -55px rgba(0, 0, 0, 0.75);
+}
+.card h4{
+    color: white;
+}
+.card p{
+    color: rgb(255, 255, 255);
+}
+
+/* ************************************* Download section starts here */
+.screen-section{
+    /* background-image: url('vecter/star.png');
+    background-size: cover;
+    background-blend-mode: color-dodge; */
+    width: 100%;
+    margin: 100px 0;
+    height:fit-content;
+    /* padding-top: 120px; */
+    padding-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* background-image:linear-gradient(#0a1225,#0a1225); */
+    /* background-repeat: no-repeat; */
+    /* clip-path: polygon(100% 0%,100% 74%,0% 100%,0% 25%,100% 0%); */
+}
+.screen-row{
+    align-items: center;
+}
+.screen-p{
+    color: #fff;
+}
+.dimg{
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    object-fit:cover;
+    pointer-events: none;
+    margin-right: -900px;
+    margin-top: -700px;
+    mix-blend-mode: color-dodge;
+}
+
+
+
+/* *********************** contact *********************************** */
+.about-section{
+    margin-bottom: 70px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.contact-section{
+    align-items: center;
+    text-align: center;
+}
+.contact-section h1{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 70px;
+}
+.name,.email,.message{
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid;
+    color: #888;
+    padding: 10px 6px;
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+.name{
+    width: 300px;
+}
+.email{
+    width: 300px;
+}
+.message{
+    min-width: 600px;
+    max-width: 650px;
+}
+.touchbtn{
+    background:#0a1225;
+    color: white;
+    padding: 12px 40px;
+    border: 0;
+    border-radius:100px ;
+    border: 1px solid white;
+    text-transform: uppercase;
+    font-size: 14px;
+    cursor: pointer;
+}
+.touchbtn:hover{
+    color: rgb(251, 188, 71);
+    border: 1px solid rgb(251, 188, 71);
+}
+
+/* *************************** Footer  */
+.social-media{
+    display: flex;
+    list-style: none;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.social-media a{
+    margin: 0 20px;
+    text-decoration: none;
+    color: #fff;
+  }
+.footercl{
+    background-color: #030f2a;
+    height:fit-content;
+    display: inline-flexbox;
+    text-align: center;
+    position: relative;
+    padding: 50px;
+    justify-content: center;
+}
+.footercon{
+    justify-content: center;
+    padding: 20px;
+}
+.links a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+
+
+/* ************************************* Float button **************************** */
+#myBtn {
+    display: none;
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    z-index: 99;
+    cursor: pointer;
+    padding: 15px; 
+    font-size: 50px; 
+    background: none;
+    border: none;
+    box-shadow: -8px 8px 89px -55px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -38px 38px 8px -85px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -8px 8px 89px -55px rgba(0, 0, 0, 0.75);
+}
+#myBtn:hover {
+    box-shadow: none;
+}
+
+
+
+/* ************************************** whitepaper div section start here */
+.sec{
+    position: relative;
+    padding: 100px;
+    background: #0a1225;
+    margin-top: -220px;
+}
+.sec h2{
+    font-size: 3.5em;
+    margin: 20px 0;
+    color: #fff;
+}
+.sec h3{
+    font-size: 2.0em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.sec h4{
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.sec p{
+    font-size: 1.0em;
+    color: #fff;
+}
+.sec ul{
+    color: white;
+    margin-left: 50px;
+    list-style: none;
+}
