@@ -246,8 +246,24 @@ body{
 .card h4{
     color: white;
 }
+.circle{
+    height: 70px;
+    width: 70px;
+    background-color: white;
+    color:#0a1225;
+    padding: 12px;
+    display: inline-block;
+    margin-bottom: 30px;
+    font-size: 30px;
+    border-radius: 50%;
+}
 .card p{
     color: rgb(255, 255, 255);
+}
+.card:hover .circle{
+    background-color: #0a1225;
+    color: white;
+    transition: 0.5s;
 }
 
 /* ************************************* Download section starts here */
